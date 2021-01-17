@@ -93,7 +93,7 @@ div {
 #arrow {
   position: absolute;
   top: 45vh;
-  right: 5vw;
+  right: 4.5vw;
   font-size: 5vh;
   font-weight: lighter;
   z-index: 99;
@@ -182,6 +182,7 @@ img {
   }
 
   #arrow {
+    right: 3vw;
   font-size: 6vh;}
 
     .head-img {
