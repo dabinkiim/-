@@ -14,16 +14,6 @@ body {
   display: none;
 }
 
-
-.header {
-  font-size: 45px;
-  letter-spacing: 1.5px;
-  padding: 4px 4px 4px 8px;
-  width: 100%;
-  height: 140px;
-  z-index: 99;
-}
-
 .moving-left {
   white-space: nowrap;
   position: absolute;
@@ -69,15 +59,15 @@ div {
   height: 88%;
   left: 14%;
   top: 5%;
-
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  font-family: 'EB Garamond', italic, 'Noto Serif TC', serif;
+  font-family: 'EB Garamond', italic, 'Noto Serif TC';
   font-size: 22px;
 }
+
 .box2, .box3 {
   left: 6%;
+  width: 82%;
   padding: 0% 3% 0% 3%;
   overflow: scroll;
   background: #FFFFFF;
@@ -85,7 +75,6 @@ div {
 }
 
 .box2 {
-  width: 82%;
   height: 35vh;
   font-size: 18px;
   margin-top: 10vh;
@@ -94,7 +83,6 @@ div {
 }
 
 .box3 {
-  width: 82%;
   height: 37vh;
   font-size: 16px;
   z-index: 2;
@@ -104,19 +92,28 @@ div {
 /* text style*/
 #arrow {
   position: absolute;
-  top: 46vh;
-  left: 64.5vw;
-  font-size: 30px;
+  top: 45vh;
+  left: 61vw;
+  font-size: 5vh;
+  font-weight: lighter;
   z-index: 99;
   border: 0;
   outline: 0;
   background: 0;
-  font-family: 'EB Garamond', italic;
+  font-family:  'EB Garamond', italic;
+  animation: rotate_image 30s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
 }
 
 #arrow:hover {
   cursor:crosshair;
-  color: #4051B3;
+  color: #C7F16F;
 }
 
 img {
@@ -139,19 +136,19 @@ img {
 
 .head,.headline {
   font-family: 'EB Garamond', italic;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .headline:hover {
   cursor:crosshair;
-  color: #4051B3;
+  color: #C7F16F;
 }
 
 
 .small-text {
   font-family: 'Spectral', 'Noto Serif TC', serif;
   font-size: 11px;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 
@@ -162,27 +159,30 @@ img {
 
   body {line-height: 1.4;}
 
-  .moving-left {top:-5px;}
+  .moving-left {top:-1px;}
 
   .box1{
     overflow: hidden;
-    width: 86%;
-    height: 88%;
-    left: 7%;
-    top: 6%;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 4%;
+    font-size: 18px;
   }
 
   .box2, .box3 {
-    left: 7%;
+    left: 5%;
+    width: 86%;
     padding: 0% 2% 0% 2%;
     overflow: scroll;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Spectral', serif;
     font-size: 14px;
   }
 
-  #arrow { left: 72vw;}
+  #arrow {
+    left: 71vw;
+  font-size: 6vh;}
 
     .head-img {
       margin: 2%;
