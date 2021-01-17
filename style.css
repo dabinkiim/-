@@ -93,7 +93,7 @@ div {
 #arrow {
   position: absolute;
   top: 45vh;
-  left: 61vw;
+  right: 5vw;
   font-size: 5vh;
   font-weight: lighter;
   z-index: 99;
@@ -137,6 +137,7 @@ img {
 .head,.headline {
   font-family: 'EB Garamond', italic;
   font-size: 24px;
+  font-style: italic;
 }
 
 .headline:hover {
@@ -181,7 +182,6 @@ img {
   }
 
   #arrow {
-    left: 71vw;
   font-size: 6vh;}
 
     .head-img {
