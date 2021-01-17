@@ -95,7 +95,7 @@ div {
   top: 45vh;
   right: 4.5vw;
   font-size: 5vh;
-  font-weight: lighter;
+  font-weight: bold;
   z-index: 99;
   border: 0;
   outline: 0;
@@ -182,7 +182,7 @@ img {
   }
 
   #arrow {
-    right: 3vw;
+    right: 2vw;
   font-size: 6vh;}
 
     .head-img {
