@@ -11,8 +11,8 @@ $(function(){
           $('#arrow').animate({top : '11vh'});
       } else {
           isOn = true;
-          $('.box2').animate({height : '33vh'});
-          $('.box3').animate({height : '39vh'});
+          $('.box2').animate({height : '34vh'});
+          $('.box3').animate({height : '38vh'});
           $('#arrow').text("👁");
           $('#arrow').animate({top : '46vh'});
 
