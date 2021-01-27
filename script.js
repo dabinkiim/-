@@ -6,20 +6,28 @@ $(function(){
       if ( isOn ){
           isOn = false;
           $('.box2').animate({height : '0vh'});
-          $('.box3').animate({height : '72vh'});
+          $('.box3').animate({height : '73vh'});
           $('#arrow').text("╳");
           $('#arrow').animate({top : '11vh'});
       } else {
           isOn = true;
-          $('.box2').animate({height : '34vh'});
+          $('.box2').animate({height : '35vh'});
           $('.box3').animate({height : '38vh'});
-          $('#arrow').text("👁");
+          $('#arrow').text("⌕");
           $('#arrow').animate({top : '46vh'});
 
       }
       return false;
   });
+});
 
+$(function(){
 
-
+  $('.box3').hover(function(){
+    $('.box2').animate({height : '0vh'});
+    $('.box3').animate({height : '73vh'});
+  }, function(){
+    $('.box2').animate({height : '35vh'});
+    $('.box3').animate({height : '38vh'});
+  });
 });

@@ -17,7 +17,7 @@ body {
 .moving-left {
   white-space: nowrap;
   position: absolute;
-  top: 10px;
+  top: 11px;
 }
 
 .moving-left {
@@ -60,12 +60,12 @@ div {
   left: 14%;
   top: 5%;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25), inset 0px 5px 5px rgba(0, 0, 0, 0.25);
   font-family: 'EB Garamond', italic, 'Noto Serif TC';
-  font-size: 22px;
+  font-size: 23px;
 }
 
-.box2, .box3 {
+.box2, .box3, .box3-a {
   left: 6%;
   width: 82%;
   padding: 0% 3% 0% 3%;
@@ -75,51 +75,26 @@ div {
 }
 
 .box2 {
-  height: 34vh;
+  height: 35vh;
   font-size: 18px;
   margin-top: 10vh;
   z-index: 3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1), inset 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
-.box3 {
+.box3, .box3-a {
   height: 38vh;
   font-size: 16px;
   z-index: 2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25), inset 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #text-right {
+  width: 100%;
   text-align: right;
-  float: right;
 }
 
 /* text style*/
-#arrow {
-  position: absolute;
-  top: 45vh;
-  right: 5vw;
-  font-size: 5vh;
-  font-weight: bold;
-  z-index: 99;
-  border: 0;
-  outline: 0;
-  background: 0;
-  font-family:  'EB Garamond', italic;
-  animation: rotate_image 30s linear infinite;
-  transform-origin: 50% 50%;
-}
-
-@keyframes rotate_image{
-	100% {
-    	transform: rotate(360deg);
-    }
-}
-
-#arrow:hover {
-  cursor:crosshair;
-  color: #C7F16F;
-}
 
 img {
   margin: 1%;
@@ -143,7 +118,6 @@ img {
 
 .head,.headline,.back {
   font-family: 'EB Garamond', italic, 'Noto Serif TC', serif;
-  font-size: 24px;
   font-style: italic;
 }
 
@@ -151,16 +125,21 @@ img {
   text-align: center;
 }
 
+.head {
+  font-size: 22px;
+}
+
 
 .headline {
   border-bottom: 1px solid currentColor;
+  font-size: 32px;
   display: inline-block;
   line-height: 0.85;
 }
 
 .headline:hover {
   cursor:crosshair;
-  color: #C7F16F;
+  color: #0000FF;
 }
 
 
@@ -184,6 +163,10 @@ button {
 	opacity: .5;
 }
 
+#arrow, #arrowguide {
+  visibility: hidden;
+}
+
 
 /* mobile */
 
@@ -202,7 +185,7 @@ button {
     font-size: 18px;
   }
 
-  .box2, .box3 {
+  .box2, .box3, .box3-a {
     left: 5%;
     width: 86%;
     padding: 0% 2% 0% 2%;
@@ -211,17 +194,37 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 14px;
   }
-
   #arrow {
-    right: 2vw;
-  font-size: 6vh;}
+    visibility: visible;
+    position: absolute;
+    top: 46vh;
+    right: 7.5vw;
+    font-size: 6vh;
+    color: #0000FF;
+    font-weight: lighter;
+    z-index: 99;
+    border: 0;
+    outline: 0;
+    background: 0;
+    transform: rotate(-90deg);
+  }
+
+  #arrowguide {
+    visibility: visible;
+    font-size: 14px;
+    color: #0000FF;
+  }
 
     .head-img {
       margin: 2%;
       float: none;
     }
 
-    .head,.headline {
+    .headline {
+      font-size: 22px;
+    }
+
+    .head {
       font-size: 18px;
     }
 
