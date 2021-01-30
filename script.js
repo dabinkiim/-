@@ -22,12 +22,13 @@ $(function(){
 });
 
 $(function(){
-
-  $('.box3').hover(function(){
-    $('.box2').animate({height : '0vh'});
-    $('.box3').animate({height : '73vh'});
-  }, function(){
-    $('.box2').animate({height : '35vh'});
-    $('.box3').animate({height : '38vh'});
-  });
+  if (window.innerWidth >= 600) {
+    $('.box3').hover(function(){
+      $('.box2').animate({height : '0vh'});
+      $('.box3').animate({height : '73vh'});
+    }, function(){
+      $('.box2').animate({height : '35vh'});
+      $('.box3').animate({height : '38vh'});
+    })
+  };
 });
