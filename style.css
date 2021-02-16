@@ -217,8 +217,8 @@ button {
 
     #head-img {
       min-width: 245px;
-      margin: 2%;
-      float: none;
+      display: block;
+      margin: 0.5% auto;
     }
 
     .headline {
